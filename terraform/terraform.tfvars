@@ -1,0 +1,14 @@
+resource_group_name = "k8s-resource-group"
+location            = "East US"
+vnet_name           = "k8s-vnet"
+vnet_cidr          = "10.0.0.0/16"
+subnet_name        = "k8s-subnet"
+subnet_cidr        = "10.0.1.0/24"
+master_ips         = ["10.0.1.10", "10.0.1.11"]
+worker_ips         = ["10.0.1.20", "10.0.1.21"]
+haproxy_ip         = "10.0.1.5"
+master_vm_size     = "Standard_D2s_v3"
+worker_vm_size     = "Standard_B1s"
+haproxy_vm_size    = "Standard_B1s"
+admin_username      = "k8sadmin"
+admin_password      = "admin123#"
